@@ -1,27 +1,17 @@
-export function factorial(n) {
-  return n > 1 ? n * factorial(n - 1) : 1;
-  // implementation iterative
-  // let result = 1;
-  // for (let i = 2; i <= n; i++) {
-  //   result *= i;
-  // }
-  // return result;
-}
+/**
+ * Calculates the factorial of a given number.
+ *
+ * @param {number} n - The number for which to calculate the factorial.
+ * @return {number} - The factorial of the given number.
+ */
+export function factorial(n) {}
 
-export function calculator(n1, n2, operator) {
-  if (isNaN(n1) || isNaN(n2)) return "error";
-  if (n2 == 0 && operator === "/") return "error";
-
-  if (operator === "+") {
-    return n1 + n2;
-  }
-  if (operator === "-") {
-    return n1 - n2;
-  }
-  if (operator === "*") {
-    return n1 * n2;
-  }
-  if (operator === "/") {
-    return n1 / n2;
-  }
-}
+/**
+ * Calculates the result of a mathematical operation between two numbers.
+ *
+ * @param {number} n1 - The first number in the operation.
+ * @param {number} n2 - The second number in the operation.
+ * @param {string} operator - The operator specifying the type of operation.
+ * @return {number|string} The result of the mathematical operation or "error" if the input is invalid.
+ */
+export function calculator(n1, n2, operator) {}

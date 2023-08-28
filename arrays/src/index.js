@@ -1,53 +1,60 @@
-export function insertFinal(array, value) {
-  array.push(value);
-  return array;
-}
+/**
+ * Inserts a value at the end of an array.
+ *
+ * @param {Array} array - The array to modify.
+ * @param {any} value - The value to insert.
+ * @return {Array} The modified array with the value inserted at the end.
+ */
+export function insertFinal(array, value) {}
 
-export function insertFirst(array, value) {
-  array.unshift(value);
-  return array;
-}
+/**
+ * Inserts a value at the beginning of an array.
+ *
+ * @param {Array} array - The array to insert the value into.
+ * @param {*} value - The value to insert.
+ * @return {Array} - The modified array with the value inserted at the beginning.
+ */
+export function insertFirst(array, value) {}
 
-export function orderArray(array, order) {
-  if (order === "asc") {
-    if (typeof array[0] == "number") return array.sort((a, b) => a - b);
-    return array.sort((a, b) => a.localeCompare(b));
-  }
-  if (typeof array[0] == "number") return array.sort((a, b) => b - a);
-  return array.sort((a, b) => b.localeCompare(a));
-}
+/**
+ * Sorts an array in ascending or descending order based on the specified order.
+ *
+ * @param {Array} array - The array to be sorted.
+ * @param {string} order - The order in which to sort the array. Can be "asc" for ascending or "desc" for descending.
+ * @return {Array} - The sorted array.
+ */
+export function orderArray(array, order) {}
 
-export function filterArray(array, value) {
-  return array.filter((item) => item === value);
-}
+/**
+ * Filters an array to only include elements equal to a specific value.
+ *
+ * @param {Array} array - The array to be filtered.
+ * @param {any} value - The value to filter by.
+ * @return {Array} - The filtered array.
+ */
+export function filterArray(array, value) {}
 
-export function sumItems(array) {
-  return array.reduce((acc, item) => acc + item, 0);
-}
+/**
+ * Calculates the sum of all items in the given array.
+ *
+ * @param {Array} array - The array of numbers to sum.
+ * @return {number} The sum of all items in the array.
+ */
+export function sumItems(array) {}
 
-export function splitArray(array, size) {
-  return array.reduce((acc, item, index) => {
-    if (index % size === 0) acc.push([]);
-    acc[acc.length - 1].push(item);
-    return acc;
-  }, []);
+/**
+ * Splits an array into smaller arrays of a specified size.
+ *
+ * @param {Array} array - The array to be split.
+ * @param {number} size - The size of each smaller array.
+ * @return {Array} An array of smaller arrays.
+ */
+export function splitArray(array, size) {}
 
-  /*
-  const result = [];
-  for (let i = 0; i < array.length; i += size) {
-    result.push(array.slice(i, i + size));
-  }
-  return result;
-  */
-}
-
-export function splitArrayEvenOdds(array) {
-  const odd = [];
-  const even = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] % 2 === 0) even.push(array[i]);
-    else odd.push(array[i]);
-  }
-
-  return [odd, even];
-}
+/**
+ * Splits an array of numbers into two separate arrays: one for odd numbers and one for even numbers.
+ *
+ * @param {Array<number>} array - The array of numbers to split.
+ * @return {Array<Array<number>>} An array containing two arrays: the first one with odd numbers and the second one with even numbers.
+ */
+export function splitArrayEvenOdds(array) {}
