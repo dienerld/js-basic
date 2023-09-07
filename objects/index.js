@@ -1,8 +1,18 @@
+import { randomUUID } from "node:crypto";
 
 /**
  * Creates an object satisfying test conditions.
  */
 export const person = {
+  id: randomUUID(),
+  name: "person",
+  lastName: "10",
+  age: 10,
+  address: {
+    street: "street",
+    number: 10,
+    city: "city",
+  },
 };
 
 /**
@@ -15,5 +25,16 @@ export const person = {
  * @param {string} image - The image URL of the object.
  * @return {object} - The created object.
  */
-export function createObject() {
+export function createObject(name, description, price, quantity, image) {
+  return {
+    id: randomUUID(),
+    name,
+    description,
+    price,
+    quantity,
+    image,
+    getValueStock() {
+      return quantity * price;
+    },
+  };
 }
