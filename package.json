@@ -5,8 +5,9 @@
   "license": "MIT",
   "scripts": {
     "test:all": "vitest run",
-    "test:arrays": "vitest ./arrays*",
-    "test:functions": "vitest ./functions*",
+    "test:arrays": "vitest ./arrays/*",
+    "test:functions": "vitest ./functions/*",
+    "test:objects": "vitest ./objects/*",
     "test:fib": "vitest run -c ./vitest-fib.config.js ./fibonacci*"
   },
   "devDependencies": {
