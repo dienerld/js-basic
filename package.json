@@ -1,0 +1,15 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test:all": "vitest run",
+    "test:arrays": "vitest ./arrays*",
+    "test:functions": "vitest ./functions*",
+    "test:fib": "vitest run -c ./vitest-fib.config.js ./fibonacci*"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.3"
+  }
+}

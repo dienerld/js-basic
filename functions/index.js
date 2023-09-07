@@ -4,7 +4,8 @@
  * @param {number} n - The number for which to calculate the factorial.
  * @return {number} - The factorial of the given number.
  */
-export function factorial(n) {}
+export function factorial(n) {
+}
 
 /**
  * Calculates the result of a mathematical operation between two numbers.
